@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="main">
+<form method="post">
+	
+    <div class="container">
+  <h2>Accident Database</h2>
+  <br>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Accident location</th>
+        <th>Hospital</th>
+        <th>Accept button</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ vict[-1] }}</td>
+        <td>{{ hosp[-1] }}</td>
+        <td>
+            <input id="button" class="btn btn-info" type="submit" name="button" onclick="myFunction();" value="Accept"/>
+            <script>
+            function myFunction()
+            {
+                alert("Request Accepted");
+            };
+            </script>
+        </td>
+      </tr>
+      
+            
+            function myFunction()
+            {
+                <div class="alert alert-success">
+                <strong>Success!</strong> Indicates a successful or positive action.
+                </div>
+            };
+            </script>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+	
+	 
+</form>
+</div>
+
+{% endblock %}
